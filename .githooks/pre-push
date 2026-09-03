@@ -3,4 +3,3 @@ set -eu
 
 echo "Running PLAQ local quality gate before push..."
 exec python tools/check.py
-
