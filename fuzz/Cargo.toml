@@ -1,0 +1,31 @@
+[package]
+name = "plaq-fuzz"
+version = "0.0.0"
+publish = false
+edition = "2024"
+
+[package.metadata]
+cargo-fuzz = true
+
+[dependencies]
+libfuzzer-sys = "0.4"
+plaq-format = { path = "../crates/plaq-format" }
+plaq-stream = { path = "../crates/plaq-stream" }
+
+[[bin]]
+name = "decode_container"
+path = "fuzz_targets/decode_container.rs"
+test = false
+doc = false
+bench = false
+
+[[bin]]
+name = "decode_packet"
+path = "fuzz_targets/decode_packet.rs"
+test = false
+doc = false
+bench = false
+
+[workspace]
+members = ["."]
+
