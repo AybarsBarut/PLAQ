@@ -44,7 +44,7 @@ Requires Rust 1.87 or newer. Python 3 with NumPy and Matplotlib is needed only
 for visualization.
 
 ```bash
-git clone <repository-url> plaq-codec
+git clone https://github.com/AybarsBarut/PLAQ.git plaq-codec
 cd plaq-codec
 cargo build --release -p plaq-cli
 
@@ -179,4 +179,3 @@ pinned FLAC baseline. Results that disfavor PLAQ belong in the repository.
 
 See [CONTRIBUTING](CONTRIBUTING.md) and [SECURITY](SECURITY.md). PLAQ is licensed
 under [Apache-2.0](LICENSE).
-
