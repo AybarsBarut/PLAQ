@@ -149,12 +149,17 @@ Markdown comparison table.
 
 ## Tests
 
+PLAQ does not require hosted CI. One local command runs the complete quality
+gate:
+
 ```bash
-cargo fmt --all -- --check
-cargo clippy --workspace --all-targets --all-features -- -D warnings
-cargo test --workspace --all-features
-cargo doc --workspace --no-deps
-python -m py_compile tools/*.py
+python tools/check.py
+```
+
+Optionally make it automatic before every `git push`:
+
+```bash
+git config core.hooksPath .githooks
 ```
 
 Tests cover silence, impulse, sweep, white/pink noise, very low and maximum

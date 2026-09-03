@@ -14,4 +14,5 @@ compatibility is documented separately in `docs/FORMAT.md`.
 - TCP byte-stream and UDP packet/reassembly demonstrations.
 - Separate lossy physical-stylus simulation and diagnostic visualization.
 - Property, corruption, truncation, CLI, and packet reordering tests.
-
+- Cross-platform local quality gate and optional pre-push hook, requiring no
+  hosted CI or billing configuration.
