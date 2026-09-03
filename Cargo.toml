@@ -1,0 +1,31 @@
+[workspace]
+members = [
+    "crates/plaq-core",
+    "crates/plaq-format",
+    "crates/plaq-stream",
+    "crates/plaq-cli",
+]
+resolver = "2"
+exclude = ["fuzz"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+rust-version = "1.87"
+
+[workspace.dependencies]
+anyhow = "1.0"
+clap = { version = "4.5", features = ["derive"] }
+crc32c = "0.6"
+hound = "3.5"
+proptest = "1.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+thiserror = "2.0"
+tempfile = "3.23"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

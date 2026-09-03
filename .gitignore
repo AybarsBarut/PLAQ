@@ -1,0 +1,14 @@
+.ai/
+target/
+fuzz/target/
+fuzz/corpus/
+fuzz/artifacts/
+__pycache__/
+*.py[cod]
+*.plaq
+*.wav
+*.flac
+*.png
+benchmark-*.json
+.DS_Store
+Thumbs.db

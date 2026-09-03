@@ -1,0 +1,24 @@
+[package]
+name = "plaq-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "plaq"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+clap.workspace = true
+hound.workspace = true
+plaq-core = { path = "../plaq-core" }
+plaq-format = { path = "../plaq-format" }
+plaq-stream = { path = "../plaq-stream" }
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

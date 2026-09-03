@@ -1,0 +1,13 @@
+[package]
+name = "plaq-format"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+description = "Safe reader and writer for the PLAQ lossless audio container"
+
+[dependencies]
+crc32c.workspace = true
+plaq-core = { path = "../plaq-core" }
+sha2.workspace = true
+thiserror.workspace = true
